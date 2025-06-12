@@ -79,7 +79,7 @@ def detect_annual_compound_events(tmp_series, spei_series, unique_years,
             all_severities.extend(severities)
             
             grid_annual_max_duration[year_idx] = max(durations)
-            grid_annual_max_severity[year_idx] = max(severities)/max(durations)
+            grid_annual_max_severity[year_idx] = max(severities)
 
     return grid_annual_max_duration, grid_annual_max_severity, np.array(all_durations), np.array(all_severities)
 
